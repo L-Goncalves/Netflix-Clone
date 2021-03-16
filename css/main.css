@@ -1,0 +1,112 @@
+:root{
+   --preto: #141414;
+   --vermelho: #E50914;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    transition: all 250ms;
+
+}
+
+
+body{
+    background-color: var(--preto);
+    color: white;
+}
+
+
+header .container{
+     background-color: var(--preto);
+     display: flex;
+ 
+     align-items: center;
+     justify-content: space-between;
+     padding: 4.5px;
+}
+
+header .logo{
+    margin: 15px 13.2px;
+    font-size: 3rem;
+    color: var(--vermelho);
+}
+
+header > .container nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+header > .container nav a:first-child{
+    font-weight: 700;
+}
+
+header nav a:hover{
+    opacity: 0.8;
+}
+
+
+.filme-principal{
+    font-size: 1rem;
+    background: linear-gradient(rgba(0,0,0,.20), rgba(0,0,0,.20) 100%) ,url('/img/capa-imagem.jpg');
+    height: 85vh;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin: 10px 0 40px 0;
+}
+
+.filme-principal > .container{
+    width: 76%;
+    margin: 0 2.5%;
+}
+
+.titulo{
+    margin-top: 22%;
+    font-size: 45px;
+}
+
+.botoes button{
+    border-radius: 2.5px;
+    border: none;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    padding: 20px 30px;
+    transition: all 250ms;
+    margin: 5px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.botoes button:last-child{
+    border: 1px solid white;
+   
+}
+
+.botoes button:hover{
+    transition: all 1s;
+    padding: 25px 35px;
+    background-color: white;
+    color: black;
+    
+}
+.botoes button i{
+   margin: 0 5px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}

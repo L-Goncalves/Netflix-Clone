@@ -1,0 +1,20 @@
+@media screen and (max-width: 450px){
+
+    *{
+        transition: all 250ms;
+    }
+
+    header .container > *{
+        display: flex;
+        flex-direction: column;
+
+       
+    }
+
+    header > .container nav a {
+        opacity: 0;
+    }
+
+
+  
+}
